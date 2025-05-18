@@ -553,13 +553,3 @@ int8_t BMI270_offset_calibration(BMI270_DEV *dev, int16_t ax, int16_t ay, int16_
 
     return BMI2_OK;
 }
-
-int8_t BMI270_madgwick_fusion(BMI270_DEV *dev)
-{   
-    float acc_squared = dev->accel_x * dev->accel_x + dev->accel_y * dev->accel_y + dev->accel_y * dev->accel_z;
-    float acc_inv_squared = fast_inv_sqrt(acc_squared);
-
-    printf("ACC SQUARED: %.3f | ACC INV SQUARED: %.3f \n", acc_squared, acc_inv_squared);
-
-    return BMI2_OK;
-}

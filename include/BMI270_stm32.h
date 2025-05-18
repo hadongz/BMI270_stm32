@@ -205,6 +205,4 @@ int8_t BMI270_record_calibration(BMI270_DEV *dev, uint16_t samples);
  */
 int8_t BMI270_offset_calibration(BMI270_DEV *dev, int16_t ax, int16_t ay, int16_t az, int16_t gx, int16_t gy, int16_t gz);
 
-int8_t BMI270_madgwick_fusion(BMI270_DEV *dev);
-
 #endif /* BMI270_HAL_H */
