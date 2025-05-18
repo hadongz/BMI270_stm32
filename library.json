@@ -1,0 +1,12 @@
+{
+    "name": "BMI270_stm32",
+    "version": "0.0.1",
+    "description": "STM32 HAL-based driver for BMI270 IMU sensor",
+    "keywords": "bmi270, imu, accelerometer, gyroscope, stm32, hal",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/hadongz/BMI270_stm32.git"
+    },
+    "frameworks": "stm32cube",
+    "platforms": ["ststm32"]
+  }
